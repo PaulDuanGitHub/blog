@@ -10,8 +10,11 @@
   -o-background-size: cover;
 }
 .serif {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: Arial, 'Lora', 'Times New Roman', serif;
 }
 .sans-serif {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.math-serif {
+  font-family: 'Cambria Math', serif;
 }
