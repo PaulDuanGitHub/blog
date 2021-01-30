@@ -13,15 +13,15 @@
 .serif,
 body,
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: Arial, 'Lora', 'Times New Roman', serif;
 }
 .sans-serif,
 h1,
-h2,
 h3,
 h4,
 h5,
 h6,
+h2,
 .navbar-custom,
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading,
@@ -29,7 +29,11 @@ h6,
 .btn,
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.math-serif,
+.post-preview > .post-meta {
+  font-family: 'Cambria Math', serif;
 }
 body {
   font-size: 20px;
@@ -44,12 +48,14 @@ li a {
   text-decoration: underline;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 100;
+}
+h2 {
+  font-weight: 600;
 }
 a {
   color: #404040;
@@ -258,7 +264,7 @@ hr.small {
 .post-preview > .post-meta {
   color: #808080;
   font-size: 18px;
-  font-style: italic;
+  font-style: normal;
   margin-top: 0;
 }
 .post-preview > .post-meta.archive {
