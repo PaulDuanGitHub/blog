@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="StringBuffer类的构造方法
+1234StringBuffer sb = new StringBuffer() //构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符StringBuffer sb = new StringBuffer(CharSequence seq) //构造"/>
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Welcome"/>
+        <meta property="og:title" content="StringBuffer类"/>
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="StringBuffer类的构造方法
+1234StringBuffer sb = new StringBuffer() //构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符StringBuffer sb = new StringBuffer(CharSequence seq) //构造"/>
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +38,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="article"/>
     
 
     <!--Page Cover-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>Welcome</title>
+    <title>StringBuffer类 - Welcome</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -158,81 +164,67 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('https://i.ibb.co/MZ98v1C/bg07l-02.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Welcome</h1>
-                    <hr class="small">
-                    <span class="subheading">这里是某人的博客</span>
+                <div class="post-heading">
+                    <h1>StringBuffer类</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-01-30
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2021/01/30/StringBuffer类/">
-        <h2 class="post-title">
-            StringBuffer类
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2021-01-30
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2021/01/30/CCC-notes-2/">
-        <h2 class="post-title">
-            CCC notes 2
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2021-01-30
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2020/01/12/CCC-notes-1/">
-        <h2 class="post-title">
-            CCC notes 1
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2020-01-12
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
 
-            <ul class="pager">
-    
-    
-</ul>
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>StringBuffer类的构造方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer() <span class="comment">//构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(CharSequence seq) <span class="comment">//构造一个字符串缓冲区，它包含与指定的 CharSequence 相同的符</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(<span class="keyword">int</span> capacity) <span class="comment">//构造一个不带字符，但具有指定初始容量的字符串缓冲区</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer() <span class="comment">//构造一个字符串缓冲区，并将其内容初始化为指定的字符串内容 其容量为字符串字数加16</span></span><br></pre></td></tr></table></figure>
+<p>StringBuffer类的capacity()和length()方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值 int</span></span><br><span class="line">capacity() <span class="comment">//返回当前容量</span></span><br><span class="line">length() <span class="comment">//返回长度</span></span><br></pre></td></tr></table></figure>
+
+                
+            </div>
+			
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr />
@@ -294,7 +286,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
