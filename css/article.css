@@ -78,6 +78,8 @@ figure.highlight pre {
   padding: 0;
   margin: 0;
   background: none;
+  font-size: 14px;
+  font-family: Consolas;
 }
 figure.highlight table {
   margin-top: 0;
@@ -107,8 +109,8 @@ pre .doctype,
 pre .pi,
 pre .lisp .string,
 pre .javadoc {
-  color: #93a1a1;
-  font-style: italic;
+  color: #277329;
+  font-style: normal;
 }
 pre .keyword,
 pre .winutils,
