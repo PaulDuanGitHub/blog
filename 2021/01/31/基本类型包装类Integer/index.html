@@ -13,8 +13,8 @@
     
 
     
-        <meta name="description" content="StringBuffer类的构造方法Date: 2021/1/30
-1234StringBuffer sb = new StringBuffer(); //构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符StringBuffer sb = new StringBuffer(CharSe"/>
+        <meta name="description" content="Integer类简介
+12345678910111213//Integer类在对象中包装了一个基本类型int的值//将基本类型包装成对象以后，扩大了基本类型所具有的操作//字段摘要：public static final int MIN_VALUE //值为 －231 的常量，它表示int类型能够表"/>
     
 
     <!--Author-->
@@ -24,13 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="StringBuffer类"/>
+        <meta property="og:title" content="基本类型包装类Integer"/>
     
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="StringBuffer类的构造方法Date: 2021/1/30
-1234StringBuffer sb = new StringBuffer(); //构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符StringBuffer sb = new StringBuffer(CharSe"/>
+        <meta property="og:description" content="Integer类简介
+12345678910111213//Integer类在对象中包装了一个基本类型int的值//将基本类型包装成对象以后，扩大了基本类型所具有的操作//字段摘要：public static final int MIN_VALUE //值为 －231 的常量，它表示int类型能够表"/>
     
 
     <!--Open Graph Site Name-->
@@ -57,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>StringBuffer类 - Welcome</title>
+    <title>基本类型包装类Integer - Welcome</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -171,13 +171,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>StringBuffer类</h1>
+                    <h1>基本类型包装类Integer</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2021-01-30
+                            2021-01-31
                         
                     </span>
                 </div>
@@ -199,24 +199,8 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>StringBuffer类的构造方法<br>Date: 2021/1/30</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(); <span class="comment">//构造一个其中不带字符的字符串缓冲区，其初始容量为 16 个字符</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(CharSequence seq); <span class="comment">//构造一个字符串缓冲区，它包含与指定的 CharSequence 相同的符</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(<span class="keyword">int</span> capacity); <span class="comment">//构造一个不带字符，但具有指定初始容量的字符串缓冲区</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(); <span class="comment">//构造一个字符串缓冲区，并将其内容初始化为指定的字符串内容 其容量为字符串字数加16</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的capacity(), charAt()和length()方法<br>Date: 2021/1/30</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值 int</span></span><br><span class="line">capacity() <span class="comment">//返回当前容量</span></span><br><span class="line">charAt() <span class="comment">//返回此序列中指定索引处的 char 值</span></span><br><span class="line">length() <span class="comment">//返回长度</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的append()方法<br>Date: 2021/1/30</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值为StringBuffer对象的引用 指向同一个内存空间</span></span><br><span class="line"><span class="comment">//参数可填：boolen, char, char[], CharSequence, double, float, int, long, Object, String</span></span><br><span class="line">StringBuffer sb = <span class="keyword">new</span> StringBuffer(); <span class="comment">//新建对象</span></span><br><span class="line">StringBuffer sb2 = sb.append(<span class="string">&quot;hello&quot;</span>); <span class="comment">//sb2指向sb</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的insert()方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值为StringBuffer对象的引用 指向同一个内存空间</span></span><br><span class="line"><span class="comment">//参数可填：boolen, char, char[], CharSequence, double, float, int, long, Object, String</span></span><br><span class="line">insert(<span class="keyword">int</span> offset, <span class="keyword">boolean</span> b) <span class="comment">//0 &lt; offset &lt; length</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的delete()和deleteCharAt()方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值为StringBuffer对象的引用</span></span><br><span class="line">delete(<span class="keyword">int</span> start, <span class="keyword">int</span> end) <span class="comment">//包含起始索引，不包含结束索引</span></span><br><span class="line">deleteCharAt(<span class="keyword">int</span> index) <span class="comment">//移除此序列指定位置的 char</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的replace()方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值为StringBuffer对象的引用</span></span><br><span class="line">replace(<span class="keyword">int</span> start, <span class="keyword">int</span> end, String str) <span class="comment">//使用给定 String 中的字符替换此序列的子字符串中的字符</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的substring()方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值为String</span></span><br><span class="line">substring(<span class="keyword">int</span> start) <span class="comment">//该子字符串始于指定索引处的字符，一直到此字符串末尾</span></span><br><span class="line">substring(<span class="keyword">int</span> start, <span class="keyword">int</span> end) <span class="comment">//返回一个新的字符序列，该字符序列是此序列的子序列</span></span><br></pre></td></tr></table></figure>
-<p>StringBuffer类的其他常用方法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reverse() <span class="comment">//返回值为StringBuffer对象的引用，将此字符序列用其反转形式取代</span></span><br><span class="line">setCharAt(<span class="keyword">int</span> index, <span class="keyword">char</span> ch) <span class="comment">//返回值void，将给定索引处的字符设置为 ch</span></span><br><span class="line">toString() <span class="comment">//返回此序列中数据的字符串表示形式</span></span><br></pre></td></tr></table></figure>
-<p><strong>**StringBuilder是一个可变的字符序列。此类提供一个与 StringBuffer 兼容的 API，但不保证同步。该类被设计用作 StringBuffer 的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快</strong></p>
-
+                <p>Integer类简介</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Integer类在对象中包装了一个基本类型int的值</span></span><br><span class="line"><span class="comment">//将基本类型包装成对象以后，扩大了基本类型所具有的操作</span></span><br><span class="line"><span class="comment">//字段摘要：</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MIN_VALUE <span class="comment">//值为 －231 的常量，它表示int类型能够表示的最小值</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MAX_VALUE <span class="comment">//值为 231－1 的常量，它表示int类型能够表示的最大值</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Class&lt;Integer&gt; TYPE <span class="comment">//表示基本类型int的Class实例</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SIZE <span class="comment">//用来以二进制补码形式表示int值的比特位数</span></span><br><span class="line"><span class="comment">//构造方法：</span></span><br><span class="line">Integer i = <span class="keyword">new</span> Integer(<span class="keyword">int</span> value) <span class="comment">//构造一个新分配的Integer对象，它表示指定的int值</span></span><br><span class="line">Integer ii = <span class="keyword">new</span> Integer(String s) <span class="comment">//构造一个新分配的Integer对象，它表示String参数所指示的int值</span></span><br><span class="line"><span class="comment">//注意：自Java9更新以来，Java不推荐使用这些构造方法</span></span><br><span class="line"><span class="comment">//Warnings: The constructor Integer(String) is deprecated since version 9</span></span><br><span class="line"><span class="comment">//推荐使用valueOf()方法代替构造方法</span></span><br></pre></td></tr></table></figure>
 
                 
             </div>
