@@ -42,6 +42,13 @@ hr.small
   width 100%
   z-index 3
   @extend .sans-serif
+  &.is-post
+    a
+      color gray-dark !important
+      &:hover, &:focus
+        color gray !important
+  hr
+    display: none
   .navbar-brand
     font-weight 800
   .nav
@@ -53,6 +60,10 @@ hr.small
         letter-spacing 1px
         text-decoration none
   @media only screen and (min-width: 768px)
+    &.is-post
+    hr
+      display: block
+      margin-top: 0px !important
     background transparent
     border-bottom 1px solid transparent
     .navbar-brand
@@ -112,6 +123,17 @@ hr.small
   background-attachment scroll
   @extend .background-cover
   margin-bottom 50px
+  &.is-post
+    background: none
+    h1, h2
+      color: gray-dark
+    .meta
+      color: gray
+    .site-heading, .post-heading, .page-heading
+      padding 45px 0
+      color white
+      @media only screen and (min-width: 768px)
+        padding 60px 0
   .site-heading, .post-heading, .page-heading
     padding 100px 0 50px
     color white
@@ -175,6 +197,13 @@ hr.small
       margin 0
       font-weight 300
       margin-bottom 10px
+    > .post-excerpt
+      color gray
+      font-size 18px
+      margin-top 0
+      &:hover, &:focus
+        text-decoration none
+        color brand-primary
   > .post-meta
     color gray
     font-size 18px

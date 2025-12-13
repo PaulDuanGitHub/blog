@@ -8,6 +8,11 @@
                 <%- item.subtitle %>
             </h3>
         <% } %>
+        <% if (item.content && item.content.length) { %>
+            <p class="post-excerpt">
+                <%- truncate(strip_html(item.content), {length: 200, omission: '...'}) %>
+            </p>
+        <% } %>
     </a>
     <p class="post-meta">
         <!-- Date and Author -->

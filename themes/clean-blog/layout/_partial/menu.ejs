@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top <%- is_post() ? 'is-post' : '' %>">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -29,6 +29,11 @@
             </ul>
         </div>
         <!-- /.navbar-collapse -->
+    </div>
+    <div>
+        <% if (is_post()) { %>
+            <hr/>
+        <% } %>
     </div>
     <!-- /.container -->
 </nav>
