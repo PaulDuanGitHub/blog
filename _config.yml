@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Paul Duan's Blog
 subtitle: ''
 description: ''
 keywords:
@@ -73,9 +73,11 @@ tag_map:
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
-# Tag Generator
-tag_generator:
-  enable_index_page: true
+# KaTeX support
+katex:
+  enable: true
+  per_page: true
+  strict: false
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

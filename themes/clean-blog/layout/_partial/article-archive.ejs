@@ -1,4 +1,9 @@
-<div class="post-preview">
+<div
+    class="post-preview"
+    style="display: none;"
+    data-tags="<%= item.tags ? item.tags.map(t => t.name).join(',') : '' %>"
+    data-categories="<%= item.categories ? item.categories.map(c => c.name).join(',') : '' %>"
+>
     <a href="<%- config.root %><%- item.path %>">
         <h1 class="post-title archive">
             <%- item.title || theme.default_post_title || "Untitled" %>

@@ -22,6 +22,36 @@
     </div>
 </header>
 
+<!-- Categories -->
+<div class="container">
+    <div class="row archive-categories">
+        <a
+            href="javascript:void(0)"
+            onclick="ArchivesFilter.updateQuery('category', '')"
+            data-category="all">
+            All
+        </a>
+        <% site.categories.each(function(category){ %>
+            <%- partial('_partial/archive-category', {category: category}) %>
+        <% }); %>
+    </div>
+</div>
+
+<!-- Tags -->
+<div class="container">
+    <div class="row archive-tags">
+        <a
+            href="javascript:void(0)"
+            onclick="ArchivesFilter.updateQuery('tag', '')"
+            data-tag="all">
+            All
+        </a>
+        <% site.tags.each(function(tag){ %>
+            <%- partial('_partial/archive-tag', {tag: tag}) %>
+        <% }); %>
+    </div>
+</div>
+
 <!-- Main Content -->
 <div class="container">
     <div class="row">

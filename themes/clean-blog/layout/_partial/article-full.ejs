@@ -33,16 +33,15 @@
             <!-- Tags and categories -->
            <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    <% if (item.tags && item.tags.length){ %>
-                        <%- partial('article-tags', {item: item}) %>
-                    <% } else { %>
-                        <%- partial('article-categories', {item: item}) %>
-                    <% } %>
+                    <% item.tags.each(function(tag){ %>
+                        <%- partial('_partial/article-tag', {tag: tag}) %>
+                    <% }); %>
                 </div>
+
                 <div class="col-lg-4 col-md-5 post-categories">
-                    <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
-                        <%- partial('article-categories', {item: item}) %>
-                    <% } %>
+                    <% item.categories.each(function(category){ %>
+                        <%- partial('_partial/article-category', {category: category}) %>
+                    <% }); %>
                 </div>
             <% } %>
 

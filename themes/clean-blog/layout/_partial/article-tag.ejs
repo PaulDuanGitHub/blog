@@ -1,0 +1,8 @@
+<% if (tag) { %>
+    <a
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', '<%= tag.name %>')"
+        data-tag="<%= tag.name %>">
+        #<%= tag.name %>
+    </a>
+<% } %>
