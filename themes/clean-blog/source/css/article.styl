@@ -1,6 +1,7 @@
 article
   .container
     .row
+      font-size: 16px
       // Responsive Images
       img
         max-width 100% !important
@@ -21,11 +22,9 @@ article
           height 100%
           margin-top 0
       blockquote
-        font-style italic
-        font-family font-serif
-        font-size 1.2em
-        padding 0 30px 15px
-        text-align center
+        font-size 16px
+        padding 1px 16px 12px
+        background #f9f9f9
         footer
           border-top none
           font-size 0.8em
@@ -48,6 +47,28 @@ article
         font-size 1.5em
         &.left
           float left
+      .callout
+        border-left 4px solid #ddd
+        padding 12px 16px
+        margin 1.5em 0
+        background #f9f9f9
+
+      .callout-title
+        font-weight 600
+        margin-bottom 6px
+        display: flex
+        align-items: center
+        gap: 8px;
+
+      .callout-content p:last-child
+        margin-bottom 0
+
+      /* Variants */
+      .callout-note { border-color: #5bc0de; }
+      .callout-tip { border-color: #5cb85c; }
+      .callout-warning { border-color: #f0ad4e; }
+      .callout-danger { border-color: #d9534f; }
+      .callout-quote { border-color: #777; }
 
 figure.highlight
   background #eee
@@ -96,6 +117,8 @@ figure.highlight
 
     .line.marked
       background: #d6d6d6
+
+
 
 pre
   // Theme: Solarized - Light

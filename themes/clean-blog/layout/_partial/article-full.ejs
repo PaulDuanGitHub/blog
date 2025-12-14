@@ -2,7 +2,7 @@
 <header class="intro-header <%- is_post() ? 'is-post' : '' %>">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
                     <% if (item.subtitle && item.subtitle.length) { %>
@@ -29,7 +29,6 @@
 <article>
     <div class="container">
         <div class="row">
-
             <!-- Tags and categories -->
            <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
@@ -50,8 +49,16 @@
                 <%- partial('gallery') %>
             <% } %>
 
+            <!-- MD TOC -->
+            <div class="visible-xs visible-sm visible-md col-md-10 col-md-offset-1">
+                <nav class="post-toc">
+                    <%- toc(item.content, { max_depth: 3 }) %>
+                </nav>
+            </div>
+
+
             <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
                 <%- item.content %>
 
                 <% if(theme.addthis) { %>
@@ -61,6 +68,15 @@
                     <!-- Go to www.addthis.com/dashboard to customize your tools -->
                     <div class="addthis_sharing_toolbox"></div>
                 <% } %>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="col-lg-3 hidden-md hidden-xs hidden-sm post-sidebar">
+                <aside>
+                    <nav class="post-toc">
+                        <%- toc(item.content, { max_depth: 3 }) %>
+                    </nav>
+                </aside>
             </div>
 
             <!-- Comments -->

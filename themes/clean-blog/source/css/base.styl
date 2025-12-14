@@ -1,11 +1,13 @@
 @import "variables.styl"
 @import "mixins.styl"
 
+html
+  scroll-behavior smooth
+
 body
   @extend .serif
   font-size 20px
   color gray-dark
-
 p
   line-height 1.5
   margin 30px 0
@@ -367,6 +369,40 @@ img::selection
 img::-moz-selection
   color white
   background transparent
+
+.post-sidebar 
+  position sticky
+  top 80px
+  max-height: 80vh
+  overflow-y: auto
+  scroll-behavior: smooth
+
+.post-toc 
+  font-size 14px
+  overflow-x hidden
+  .toc
+    padding 0px 10px
+    li
+      list-style-type none
+  a
+    color #666
+    text-decoration none
+    position relative
+    display block
+    &.active
+      color brand-primary
+      ::before
+        content ""
+        position absolute
+        top 0
+        bottom 0
+        left -500px
+        width 1000px
+        background-color #f0f0f0
+        z-index -1
+
+h1, h2, h3
+  scroll-margin-top 20px
 
 .tag-pill
   display inline-block
