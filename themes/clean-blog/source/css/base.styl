@@ -5,7 +5,7 @@ html
   scroll-behavior smooth
 
 body
-  @extend .serif
+  @extend .sans-serif
   font-size 20px
   color gray-dark
 p
@@ -18,7 +18,7 @@ p, li
 
 h1, h2, h3, h4, h5, h6
   @extend .sans-serif
-  font-weight 800
+  font-weight 750
 
 a
   color gray-dark
@@ -50,7 +50,7 @@ hr.small
       &:hover, &:focus
         color brand-primary !important
   hr
-    display: none
+    display none
   .navbar-brand
     font-weight 800
   .nav
@@ -64,8 +64,8 @@ hr.small
   @media only screen and (min-width: 768px)
     &.is-post
     hr
-      display: block
-      margin-top: 0px !important
+      display block
+      margin-top 0px !important
     background transparent
     border-bottom 1px solid transparent
     .navbar-brand
@@ -126,16 +126,17 @@ hr.small
   @extend .background-cover
   margin-bottom 50px
   &.is-post
-    background: none
+    margin-bottom 24px
+    background none
     h1, h2
-      color: gray-dark
+      color gray-dark
     .meta
-      color: gray
+      color gray
     .site-heading, .post-heading, .page-heading
-      padding 45px 0
+      padding 45px  0 0 0
       color white
       @media only screen and (min-width: 768px)
-        padding 60px 0
+        padding 60px 0 0 0
   .site-heading, .post-heading, .page-heading
     padding 100px 0 50px
     color white
@@ -171,10 +172,10 @@ hr.small
       margin 10px 0 30px
       font-weight 600
     .meta
-      @extend .serif
+      @extend .sans-serif
       font-style italic
       font-weight 300
-      font-size 20px
+      font-size 17px
       a
         color white
     @media only screen and (min-width: 768px)
@@ -200,17 +201,20 @@ hr.small
       font-weight 300
       margin-bottom 10px
     > .post-excerpt
-      color gray
-      font-size 18px
-      margin-top 0
+      color #a3a3a3
+      font-style italic
+      font-size 15px
+      margin-top 0px
+      margin-bottom 10px
       &:hover, &:focus
         text-decoration none
         color brand-primary
   > .post-meta
     color gray
-    font-size 18px
+    font-size 17px
     font-style italic
-    margin-top 0
+    margin-top 0px
+    margin-bottom 0px
     &.archive
       font-size 16px
     > a
@@ -222,7 +226,7 @@ hr.small
   @media only screen and (min-width: 768px)
     > a
       > .post-title
-        font-size 36px
+        font-size 32px
 
 .section-heading
   font-size 36px
@@ -240,16 +244,8 @@ hr.small
   border-bottom-left-radius 5px
 
 .post-tags, .post-categories
-  font-size 15px
-  margin-top 30px
-  margin-bottom 30px
-  a
-    border-bottom 1px dotted #ABABAB
-    text-transform uppercase
-    margin-right 10px
-    &:hover, &:visited, &:active
-      text-decoration none
-      border-bottom none
+  margin-top 20px
+  width fit-content
 
 .archive-before-pagination
   height 30px
@@ -373,13 +369,30 @@ img::-moz-selection
 .post-sidebar 
   position sticky
   top 80px
-  max-height: 80vh
-  overflow-y: auto
-  scroll-behavior: smooth
+  scroll-behavior smooth
+  margin-top 30px
+  max-height 80vh
+  overflow-y auto
+.sidebar-heading
+  position sticky
+  top 0
+  display flex
+  background white
+  z-index 1
+  button
+    font-size 16px
+    font-weight normal
+    padding 2px 5px
+    background none
+    &.mobile
+      font-size 17px
 
 .post-toc 
   font-size 14px
+  @extend .sans-serif
   overflow-x hidden
+  &.mobile
+    font-size 17px
   .toc
     padding 0px 10px
     li
@@ -391,48 +404,57 @@ img::-moz-selection
     display block
     &.active
       color brand-primary
-      ::before
+      &:before
         content ""
         position absolute
         top 0
         bottom 0
-        left -500px
+        right -10px
         width 1000px
-        background-color #f0f0f0
+        background-color #f2f2f2
         z-index -1
+        border-right 3px solid brand-primary
 
 h1, h2, h3
   scroll-margin-top 20px
 
 .tag-pill
   display inline-block
+  text-transform uppercase
   padding 5px 10px
-  margin 3px
-  font-size 0.9em
-  color #fff
-  background-color brand-primary
+  font-size 14px
+  border 1px solid gray-dark
   border-radius 20px
-  text-decoration none
+  margin-right 10px
+  margin-bottom 10px
+  @extend .sans-serif
+  &:hover, &:visited, &:active
+    text-decoration none
+    border 1px solid brand-primary
+  &.tag-active
+    color white
+    border 1px solid brand-primary
+    background-color brand-primary
+    text-decoration none
+
+.category-link
+  display block
+  font-size 16px
+  @extend .sans-serif
+  padding 2px 10px
+  text-transform capitalize
+  &:hover, &:visited, &:active
+    text-decoration none
+  &.category-active
+    text-decoration none
+    color brand-primary
+    background-color #f2f2f2
+    border-left 3px solid brand-primary
 
 .archive-categories
-  font-size 15px
-  a
-    // border-bottom 1px solid #ABABAB
-    text-transform uppercase
-    margin-right 10px
-    transition: box-shadow 0.1s ease-in-out
-    &:hover, &:visited, &:active, &.category-active
-      text-decoration none
-      box-shadow: inset 0px -4px brand-primary;
+  margin-top 30px
+  .collapse, .collapsing
+    padding-left 5px
 
-.archive-tags
-  font-size 15px
-  a
-    border-bottom 1px dotted #ABABAB
-    text-transform uppercase
-    margin-right 10px
-    &:hover, &:visited, &:active, &.tag-active
-      text-decoration none
-      box-shadow: inset 0px -4px brand-primary;
 body
   webkit-tap-highlight-color brand-primary

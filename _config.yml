@@ -4,7 +4,7 @@
 
 # Site
 title: Paul's Blog
-subtitle: '“走快点吧，走快点吧，时间不多了”'
+subtitle: ''
 description: ''
 keywords:
 author: Paul Duan
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://paulduangithub.github.io/blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

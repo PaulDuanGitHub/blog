@@ -45,15 +45,24 @@
         tocLinks.forEach(link => link.classList.remove('active'));
 
         visibleHeadings.forEach(entry => {
-            const tocLink = document.querySelector(
-              `.post-sidebar .post-toc a[href="#${encodeURIComponent(CSS.escape(entry.target.id))}"]`
-            );
-            tocLink?.classList.add('active');
-
+            console.log(entry);
+            console.log(entry.target.id);
+            const tocLinks = document.querySelectorAll('.post-sidebar .post-toc a');
+            
+            let activeLink = null;
+            
+            tocLinks.forEach(link => {
+              decodedHash = decodeURIComponent(link.hash?.slice(1));
+              if (decodedHash === entry.target.id) {
+                activeLink = link;
+              }
+            });
+            
+            activeLink?.classList.add('active');
             sidebar = document.querySelector('.post-sidebar');
 
             if (sidebar && sidebar.scrollHeight > sidebar.clientHeight) {
-              scrollToView(tocLink, sidebar, sidebar.clientHeight / 2);
+              scrollToView(activeLink, sidebar, sidebar.clientHeight / 2);
             }
 
         });

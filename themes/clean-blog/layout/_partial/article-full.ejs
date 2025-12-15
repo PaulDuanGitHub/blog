@@ -4,6 +4,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
                 <div class="post-heading">
+                    <% if (item.categories && item.categories.length) { %>
+                        <div class="post-categories">
+                            <% item.categories.each(function(category){ %>
+                                <%- partial('_partial/article-category', {category: category}) %>
+                            <% }); %>
+                        </div>
+                    <% } %>
                     <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
                     <% if (item.subtitle && item.subtitle.length) { %>
                     <h2 class="post-subheading">
@@ -19,31 +26,25 @@
                             <%= item.date.format(config.date_format) %>
                         <% } %>
                     </span>
+                    <% if (item.tags && item.tags.length) { %>
+                        <div class="post-tags">
+                            <% item.tags.each(function(tag){ %>
+                                <%- partial('_partial/article-tag', {tag: tag}) %>
+                            <% }); %>
+                        </div>
+                    <% } %>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<hr class="section-divider">
+
 <!-- Post Content -->
 <article>
     <div class="container">
         <div class="row">
-            <!-- Tags and categories -->
-           <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    <% item.tags.each(function(tag){ %>
-                        <%- partial('_partial/article-tag', {tag: tag}) %>
-                    <% }); %>
-                </div>
-
-                <div class="col-lg-4 col-md-5 post-categories">
-                    <% item.categories.each(function(category){ %>
-                        <%- partial('_partial/article-category', {category: category}) %>
-                    <% }); %>
-                </div>
-            <% } %>
-
             <!-- Gallery -->
             <% if (item.photos && item.photos.length){ %>
                 <%- partial('gallery') %>
@@ -51,8 +52,14 @@
 
             <!-- MD TOC -->
             <div class="visible-xs visible-sm visible-md col-md-10 col-md-offset-1">
-                <nav class="post-toc">
-                    <%- toc(item.content, { max_depth: 3 }) %>
+                <div class="sidebar-heading mobile">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc-mobile" aria-expanded="false" aria-controls="article-toc-mobile">
+                        <span class="fa fa-bars"></span>
+                            Table of Contents
+                    </button>
+                </div>
+                <nav class="post-toc mobile collapse" id="article-toc-mobile">
+                    <%- toc(item.content, { max_depth: 2 }) %>
                 </nav>
             </div>
 
@@ -73,8 +80,14 @@
             <!-- Table of Contents -->
             <div class="col-lg-3 hidden-md hidden-xs hidden-sm post-sidebar">
                 <aside>
-                    <nav class="post-toc">
-                        <%- toc(item.content, { max_depth: 3 }) %>
+                    <div class="sidebar-heading">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc" aria-expanded="false" aria-controls="article-toc">
+                            <span class="fa fa-bars"></span>
+                                Table of Contents
+                        </button>
+                    </div>
+                    <nav class="post-toc collapse in" id="article-toc">
+                        <%- toc(item.content, { max_depth: 2 }) %>
                     </nav>
                 </aside>
             </div>

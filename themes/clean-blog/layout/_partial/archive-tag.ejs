@@ -1,5 +1,6 @@
 <% if (tag) { %>
     <a
+        class="tag-pill"
         href="javascript:void(0)"
         onclick="ArchivesFilter.updateQuery('tag', '<%= tag.name %>')"
         data-tag="<%= tag.name %>">

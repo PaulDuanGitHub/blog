@@ -22,40 +22,53 @@
     </div>
 </header>
 
-<!-- Categories -->
-<div class="container">
-    <div class="row archive-categories">
-        <a
-            href="javascript:void(0)"
-            onclick="ArchivesFilter.updateQuery('category', '')"
-            data-category="all">
-            All
-        </a>
-        <% site.categories.each(function(category){ %>
-            <%- partial('_partial/archive-category', {category: category}) %>
-        <% }); %>
-    </div>
-</div>
-
 <!-- Tags -->
 <div class="container">
     <div class="row archive-tags">
-        <a
-            href="javascript:void(0)"
-            onclick="ArchivesFilter.updateQuery('tag', '')"
-            data-tag="all">
-            All
-        </a>
-        <% site.tags.each(function(tag){ %>
-            <%- partial('_partial/archive-tag', {tag: tag}) %>
-        <% }); %>
+        <div class="col-lg-8 col-lg-offset-2">
+            <a
+                class="tag-pill"
+                href="javascript:void(0)"
+                onclick="ArchivesFilter.updateQuery('tag', '')"
+                data-tag="all">
+                All Tags
+            </a>
+            <% site.tags.each(function(tag){ %>
+                <%- partial('_partial/archive-tag', {tag: tag}) %>
+            <% }); %>
+        </div>
     </div>
 </div>
 
 <!-- Main Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="col-lg-2">
+            <!-- Categories -->
+            <div class="archive-categories collapse in">
+                <div class="sidebar-heading">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#archive-categories" aria-expanded="false" aria-controls="archive-categories">
+                        <span class="fa fa-bars"></span>
+                            Categories
+                    </button>
+                </div>
+                <div id="archive-categories" class="collapse in">
+                    <a
+                        class="category-link"
+                        href="javascript:void(0)"
+                        onclick="ArchivesFilter.updateQuery('category', '')"
+                        data-category="all">
+                        All
+                    </a>
+                    <% site.categories.each(function(category){ %>
+                        <div>
+                            <%- partial('_partial/archive-category', {category: category}) %>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10">
             <% page.posts.each(function(item){ %>
                 <%- partial('_partial/article-archive', {item: item}) %>
             <% }); %>

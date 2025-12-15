@@ -1,5 +1,6 @@
 <% if (category) { %>
     <a
+        class="category-link"
         href="javascript:void(0)"
         onclick="ArchivesFilter.updateQuery('category', '<%= category.name %>')"
         data-category="<%= category.name %>">

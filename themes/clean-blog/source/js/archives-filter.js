@@ -1,7 +1,7 @@
 (function () {
-    if (!location.pathname.startsWith('/archives')) {
+    if (!location.pathname.startsWith('/blog/archives')) {
         function jumpToArchives(key, value) {
-            location.href = '/archives/?' + (value ? `${key}=${value}` : '');
+            location.href = '/blog/archives/?' + (value ? `${key}=${value}` : '');
         }
     
         window.jumpToArchives = jumpToArchives;
