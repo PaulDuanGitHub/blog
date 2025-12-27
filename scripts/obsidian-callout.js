@@ -1,5 +1,5 @@
 const CALLOUT_ICONS = {
-    note: 'fa-info-circle',
+    note: 'fa-sticky-note',
     tip: 'fa-lightbulb-o',
     warning: 'fa-exclamation-triangle',
     danger: 'fa-times-circle',
