@@ -2,10 +2,22 @@ article .container .row {
   font-size: 17px;
 /* Variants */
 }
-article .container .row img {
+article .container .row figure {
+  margin: 0 auto;
+}
+article .container .row figure img {
+  display: block;
   max-width: 100% !important;
   height: auto;
-  display: inline-block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 2px 8px rgba(0,0,0,0.5);
+}
+article .container .row figure figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
 }
 article .container .row .video-container {
   position: relative;
@@ -58,9 +70,13 @@ article .container .row .callout {
   padding: 12px 16px;
   margin: 1.5em 0;
   background: #f9f9f9;
+  font-size: 16.5px;
+}
+article .container .row .callout a {
+  text-decoration: underline;
 }
 article .container .row .callout-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 6px;
   display: flex;
   align-items: center;
@@ -70,7 +86,7 @@ article .container .row .callout-content p:last-child {
   margin-bottom: 0;
 }
 article .container .row .callout-note {
-  border-color: #5bc0de;
+  border-color: #f0ad4e;
 }
 article .container .row .callout-tip {
   border-color: #5cb85c;
@@ -201,4 +217,42 @@ pre .clojure .title {
 }
 pre .deletion {
   color: #dc322f;
+}
+h1 {
+  margin: 2.5em 0 1.2em;
+}
+h2 {
+  margin: 2.2em 0 1em;
+}
+h3 {
+  margin: 1.8em 0 0.8em;
+}
+h4 {
+  margin: 1.4em 0 0.6em;
+}
+h5 {
+  margin: 1.2em 0 0.4em;
+}
+h6 {
+  margin: 1em 0 0.3em;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  scroll-margin-top: 90px;
+}
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: underline;
+}
+article strong {
+  color: brand-primary;
 }

@@ -252,6 +252,10 @@ hr.small {
 }
 .intro-header .post-heading h1 {
   font-size: 35px;
+  margin: 0 0 10px 0;
+}
+.intro-header .post-heading h2 {
+  margin: 0 0 10px 0;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -518,6 +522,9 @@ img::-moz-selection {
 .post-toc .toc {
   padding: 0px 10px;
 }
+.post-toc .toc ol {
+  padding-left: 20px;
+}
 .post-toc .toc li {
   list-style-type: none;
 }
@@ -591,6 +598,9 @@ h3 {
 .archive-categories .collapse,
 .archive-categories .collapsing {
   padding-left: 5px;
+}
+.archive-tags {
+  text-align: center;
 }
 body {
   webkit-tap-highlight-color: #0085a1;
