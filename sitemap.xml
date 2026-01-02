@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://paulduangithub.github.io/blog/2025/12/29/%E3%80%8AInteractive-Digital-Narrative%E3%80%8B%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>https://paulduangithub.github.io/blog/2026/01/02/%E3%80%8AInteractive-Digital-Narrative%E3%80%8B%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     
     <lastmod>2026-01-02</lastmod>
     
@@ -38,27 +38,6 @@
 
   
   <url>
-    <loc>https://paulduangithub.github.io/blog/tags/%E4%BA%92%E5%8A%A8%E5%8F%99%E4%BA%8B/</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/Chinese/</loc>
-    <lastmod>2026-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://paulduangithub.github.io/blog/tags/IDN-Interactive-Digital-Narrative/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -74,6 +53,27 @@
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/HF-Hypertext-Fiction/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/%E4%BA%92%E5%8A%A8%E5%8F%99%E4%BA%8B/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/Chinese/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
