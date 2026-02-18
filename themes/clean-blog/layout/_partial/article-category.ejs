@@ -1,9 +1,9 @@
 <% if (category) { %>
     <a
-        class="category-link category-active"
+        class="category-link category-active category-<%= category.name.replaceAll(" ", "-").toLowerCase() %>"
         href="javascript:void(0)"
         onclick="jumpToArchives('category', '<%= category.name %>')"
         data-category="<%= category.name %>">
-        <%= category.slug %>
+        <%= category.name %>
     </a>
 <% } %>

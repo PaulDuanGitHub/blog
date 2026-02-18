@@ -188,30 +188,33 @@ hr.small
         font-size 30px
 
 .post-preview
-  > a
+  .category-link
+    margin-top 10px
+  .post-title
+    font-size 30px
+    margin-top 0
+    margin-bottom 10px
+    &.archive
+      margin-top 30px
+      font-size 22px
+  .post-subtitle
+      margin 0
+      font-weight 300
+      margin-bottom 10px
+  a
     color gray-dark
     &:hover, &:focus
       text-decoration none
       color brand-primary
-    > .post-title
-      font-size 30px
-      margin-top 30px
-      margin-bottom 10px
-      &.archive
-        font-size 22px
-    > .post-subtitle
-      margin 0
-      font-weight 300
-      margin-bottom 10px
-    > .post-excerpt
-      color #a3a3a3
-      font-style italic
-      font-size 15px
-      margin-top 0px
-      margin-bottom 10px
-      &:hover, &:focus
-        text-decoration none
-        color brand-primary
+  .post-excerpt
+    color #a3a3a3
+    font-style italic
+    font-size 15px
+    margin-top 10px
+    margin-bottom 10px
+    &:hover, &:focus
+      text-decoration none
+      color brand-primary
   > .post-meta
     color gray
     font-size 17px
@@ -227,9 +230,8 @@ hr.small
         color brand-primary
         text-decoration underline
   @media only screen and (min-width: 768px)
-    > a
-      > .post-title
-        font-size 32px
+    .post-title
+      font-size 32px
 
 .section-heading
   font-size 36px
@@ -425,12 +427,12 @@ h1, h2, h3
 
 .tag-pill
   display inline-block
-  text-transform uppercase
-  padding 5px 10px
+  text-transform capitalize
+  padding 4px 8px
   font-size 14px
   border 1px solid gray-dark
   border-radius 20px
-  margin-right 10px
+  margin-right 5px
   margin-bottom 10px
   @extend .sans-serif
   &:hover, &:visited, &:active
@@ -443,26 +445,61 @@ h1, h2, h3
     text-decoration none
 
 .category-link
-  display block
+  display inline-block
   font-size 16px
   @extend .sans-serif
   padding 2px 10px
   text-transform capitalize
-  &:hover, &:visited, &:active
-    text-decoration none
-  &.category-active
-    text-decoration none
+  background rgb(242, 242, 242)
+  &:hover, &:focus
+    text-decoration underline !important
+  &.category-archive
+    font-size 14px
+    border-left none !important
+
+  /* all categories */
+  &.category-all.category-active
+    background-color rgba(0, 133, 161, 0.08)
     color brand-primary
-    background-color #f2f2f2
     border-left 3px solid brand-primary
+    &.category-archive
+      border-bottom 3px solid brand-primary
+
+  /* sketches */
+  &.category-sketches.category-active
+    background-color rgba(0, 133, 161, 0.08)
+    color brand-primary
+    border-left 3px solid brand-primary
+    &.category-archive
+      border-bottom 3px solid brand-primary
+
+  /* notes */
+  &.category-notes.category-active
+    background-color rgba(108, 92, 231, 0.08)
+    color category-notes
+    border-left 3px solid category-notes
+    &.category-archive
+      border-bottom 3px solid category-notes
+
+  /* build logs */
+  &.category-build-logs.category-active
+    background-color rgba(225, 112, 85, 0.08)
+    color category-build-logs
+    border-left 3px solid category-build-logs
+    &.category-archive
+      border-bottom 3px solid category-build-logs
+
 
 .archive-categories
-  margin-top 30px
-  .collapse, .collapsing
-    padding-left 5px
+  margin-top 10px
+  font-size 16px
+  div
+    margin-bottom 5px
 
 .archive-tags
-  text-align center
+  font-size 16px
+  div
+    margin-bottom 5px
 
 body
   webkit-tap-highlight-color brand-primary

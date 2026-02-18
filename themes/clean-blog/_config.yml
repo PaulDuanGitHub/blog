@@ -33,7 +33,7 @@ google_analytics: 'G-KNPEXFEH64'
 addthis:
 
 # set your own favicon
-favicon: img/favicon.ico
+favicon: /blog/img/favicon.ico
 
 # Social Accounts
 twitter_url:

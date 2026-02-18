@@ -1,13 +1,20 @@
 <div class="post-preview">
+    <div class="post-title-wrapper">
+        <% item.categories.each(function(category){ %>
+            <%- partial('_partial/article-category', {category: category}) %>
+        <% }); %>
+        <a href="<%- config.root %><%- item.path %>">
+            <h2 class="post-title">
+                <%- item.title || theme.default_post_title || "Untitled" %>
+            </h2>
+            <% if (item.subtitle && item.subtitle.length) { %>
+                <h3 class="post-subtitle">
+                    <%- item.subtitle %>
+                </h3>
+            <% } %>
+        </a>
+    </div>
     <a href="<%- config.root %><%- item.path %>">
-        <h2 class="post-title">
-            <%- item.title || theme.default_post_title || "Untitled" %>
-        </h2>
-        <% if (item.subtitle && item.subtitle.length) { %>
-            <h3 class="post-subtitle">
-                <%- item.subtitle %>
-            </h3>
-        <% } %>
         <% if (item.content && item.content.length) { %>
             <p class="post-excerpt">
                 <%- truncate(strip_html(item.content), {length: 200, omission: '...'}) %>

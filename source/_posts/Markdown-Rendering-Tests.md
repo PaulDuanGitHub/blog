@@ -2,7 +2,7 @@
 title: Markdown Rendering Tests
 date: 2025-12-15 11:20:26
 author: Paul Duan
-categories: 项目记录
+categories: Build Logs
 tags:
   - test
   - markdown
