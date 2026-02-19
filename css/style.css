@@ -283,36 +283,40 @@ hr.small {
     font-size: 30px;
   }
 }
-.post-preview > a {
-  color: #404040;
+.post-preview .category-link {
+  margin-top: 10px;
 }
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #0085a1;
-}
-.post-preview > a > .post-title {
+.post-preview .post-title {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
-.post-preview > a > .post-title.archive {
+.post-preview .post-title.archive {
+  margin-top: 30px;
   font-size: 22px;
 }
-.post-preview > a > .post-subtitle {
+.post-preview .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview > a > .post-excerpt {
+.post-preview a {
+  color: #404040;
+}
+.post-preview a:hover,
+.post-preview a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+.post-preview .post-excerpt {
   color: #a3a3a3;
   font-style: italic;
   font-size: 15px;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
-.post-preview > a > .post-excerpt:hover,
-.post-preview > a > .post-excerpt:focus {
+.post-preview .post-excerpt:hover,
+.post-preview .post-excerpt:focus {
   text-decoration: none;
   color: #0085a1;
 }
@@ -336,7 +340,7 @@ hr.small {
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
+  .post-preview .post-title {
     font-size: 32px;
   }
 }
@@ -555,12 +559,12 @@ h3 {
 }
 .tag-pill {
   display: inline-block;
-  text-transform: uppercase;
-  padding: 5px 10px;
+  text-transform: capitalize;
+  padding: 4px 8px;
   font-size: 14px;
   border: 1px solid #404040;
   border-radius: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-bottom: 10px;
 }
 .tag-pill:hover,
@@ -576,31 +580,68 @@ h3 {
   text-decoration: none;
 }
 .category-link {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   padding: 2px 10px;
   text-transform: capitalize;
+  background: #f2f2f2;
+/* all categories */
+/* sketches */
+/* notes */
+/* build logs */
 }
 .category-link:hover,
-.category-link:visited,
-.category-link:active {
-  text-decoration: none;
+.category-link:focus {
+  text-decoration: underline !important;
 }
-.category-link.category-active {
-  text-decoration: none;
+.category-link.category-archive {
+  font-size: 14px;
+  border-left: none !important;
+}
+.category-link.category-all.category-active {
+  background-color: rgba(0,133,161,0.08);
   color: #0085a1;
-  background-color: #f2f2f2;
   border-left: 3px solid #0085a1;
 }
-.archive-categories {
-  margin-top: 30px;
+.category-link.category-all.category-active.category-archive {
+  border-bottom: 3px solid #0085a1;
 }
-.archive-categories .collapse,
-.archive-categories .collapsing {
-  padding-left: 5px;
+.category-link.category-sketches.category-active {
+  background-color: rgba(0,133,161,0.08);
+  color: #0085a1;
+  border-left: 3px solid #0085a1;
+}
+.category-link.category-sketches.category-active.category-archive {
+  border-bottom: 3px solid #0085a1;
+}
+.category-link.category-notes.category-active {
+  background-color: rgba(108,92,231,0.08);
+  color: #6c5ce7;
+  border-left: 3px solid #6c5ce7;
+}
+.category-link.category-notes.category-active.category-archive {
+  border-bottom: 3px solid #6c5ce7;
+}
+.category-link.category-build-logs.category-active {
+  background-color: rgba(225,112,85,0.08);
+  color: #e17055;
+  border-left: 3px solid #e17055;
+}
+.category-link.category-build-logs.category-active.category-archive {
+  border-bottom: 3px solid #e17055;
+}
+.archive-categories {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.archive-categories div {
+  margin-bottom: 5px;
 }
 .archive-tags {
-  text-align: center;
+  font-size: 16px;
+}
+.archive-tags div {
+  margin-bottom: 5px;
 }
 body {
   webkit-tap-highlight-color: #0085a1;

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="IntroductionThis idea came from the discussion of how paperwriting compares to typewriting. There are plenty of researches on this topic. One importan"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Paul Duan"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="What happens when a text input forbids deletion?"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="IntroductionThis idea came from the discussion of how paperwriting compares to typewriting. There are plenty of researches on this topic. One importan"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Paul&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://paulduangithub.github.io/blogimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://paulduangithub.github.io/blogimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>What happens when a text input forbids deletion? - Paul&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script>
+        if (location.hostname === "paulduangithub.github.io") {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-KNPEXFEH64";
+          document.head.appendChild(s);
+      
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KNPEXFEH64');
+        }
+    </script>
+
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/blog/img/favicon.ico"/>
+    
+
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top is-post">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/blog/">Paul Duan's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/blog/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://xianzhaoduan.com">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <div>
+        
+            <hr/>
+        
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<header class="intro-header is-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    
+                        <div class="post-categories">
+                            
+                                
+    <a
+        class="category-link category-active category-sketches"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('category', 'Sketches')"
+        data-category="Sketches">
+        Sketches
+    </a>
+
+                            
+                        </div>
+                    
+                    <h1>What happens when a text input forbids deletion?</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Paul Duan on
+                        
+                        
+                            Feb 19th, 2026
+                        
+                    </span>
+                    
+                        <div class="post-tags">
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'Interation')"
+        data-tag="Interation">
+        #Interation
+    </a>
+
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'Input')"
+        data-tag="Input">
+        #Input
+    </a>
+
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'English')"
+        data-tag="English">
+        #English
+    </a>
+
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<hr class="section-divider">
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Gallery -->
+            
+
+            <!-- MD TOC -->
+            <div class="visible-xs visible-sm visible-md col-md-10 col-md-offset-1">
+                <div class="sidebar-heading mobile">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc-mobile" aria-expanded="false" aria-controls="article-toc-mobile">
+                        <span class="fa fa-bars"></span>
+                            Table of Contents
+                    </button>
+                </div>
+                <nav class="post-toc mobile collapse" id="article-toc-mobile">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Demo"><span class="toc-number">2.</span> <span class="toc-text">Demo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Implementation"><span class="toc-number">3.</span> <span class="toc-text">Implementation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Observation"><span class="toc-number">4.</span> <span class="toc-text">Observation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Open-Questions"><span class="toc-number">5.</span> <span class="toc-text">Open Questions</span></a></li></ol>
+                </nav>
+            </div>
+
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This idea came from the discussion of how paperwriting compares to typewriting. There are plenty of researches on this topic. One important study on a more generic topic is <a target="_blank" rel="noopener" href="https://cla.umn.edu/about/directory/profile/chaas"><strong>Christina Haas</strong></a>‘s work “<a target="_blank" rel="noopener" href="https://dl.acm.org/doi/book/10.5555/525524"><strong>WRITING TECHNOLOGY:  STUDIES ON THE MATERIAUTY OF LITERACY</strong></a>“ in 1996. In Chapter 4, with the supporting of various experiments and study, Haas describes how the materiality of writing tools (e.g., pen and paper vs. computer) affects writers’ planning and thinking processes.</p>
+<div class="callout callout-quote">
+    <div class="callout-title">
+      <i class="fa fa-quote-left"></i>
+      <span>WRITING TECHNOLOGY:  STUDIES ON THE MATERIAUTY OF LITERACY</span>
+    </div>
+    <div class="callout-content">
+      …Most word processing packages, even today, do not make it easy for writers to create boxes, arrows, and other diagrammatic writing notes. Because of their throw-away nature, writers’ planning notes are seldom examined as textual artifacts. In this study, however, I look at planning notes as material traces of writers’ planning and hypothesized that different technological conditions might lead to different kinds of planning notes.  
+      
+<p>…small computer displays that show only a portion of the text at once might encourage writers to focus their attention on parts of text within a screen rather than think about concerns that  extend across screens. Similarly, when using word processing writers might do less high-level text planning (i.e., text planning concerned with text structure and organization, development of a thesis or argument, and choices about  audience effect or tone of the piece). First, if writers are devoting more attention to low-level planning with word processing, it is reasonable to expect that they would think less about high level text planning. Second, if notemaking on the  word processor is inhibited, writers may engage in less high-level text planning because, as Burtis et al. (1983) point out, notemaking is used by writers to explore, develop, and organize ideas-all high-level text planning activities.  </p>
+<p>…planning notes may be difficult to create and manipulate when using standard computer systems for writing. Burtis et al. (1983) found that expert writers used planning notes to keep themselves on task, to keep track of  their goals, and to explore ideas. Although many multi-media systems allow for  the inclusion of graphics into text files, the creation of the kind of quick, nonlinear, and diagrammatic notes that writers often use to think with may be  difficult with many computer writing systems, where arrows, boxes, and added emphasis (e.g., directional arrows, checkmarks, stars) may be cumbersome to produce.</p>
+
+    </div>
+  </div>
+<p>There are lots of differences mentioned in the above quote, and nowadays, with the development of technology, some of these differences are less significant. For example, the ability to create boxes and arrows is no longer a problem with many mordern note taking apps. </p>
+<p>This sketch focuses on the ability to delete, which is a fundamental feature of typewriting but not paperwriting. And I would like to explore on the idea “If digital writing is defined by its reversibility, what remains&#x2F;changes when writing becomes irreversible again?”</p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p><a href="/blog/sketches/no-deletion.html" target="_blank">Open in new tab</a></p>
+<iframe src="/blog/sketches/no-deletion.html" width="100%" height="300px" frameborder="0"></iframe>
+
+<h1 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h1><p>As a simple implemeation we listen for keydown events and prevent the default behavior when the Backspace or Delete keys are pressed. To imitate the experience of paperwriting, to “delete” a character, instead of actually removing it, we insert a special character <code>\u0336</code> (Combining Long Stroke Overlay) before the character to be “deleted” as a naive implementation without overcomplicating logic.</p>
+<h1 id="Observation"><a href="#Observation" class="headerlink" title="Observation"></a>Observation</h1><p>As a user types in the input field, I noticed that the “deleted” texts can sometimes help me recall what I have written before, and sometimes they can also help me to compare different versions of my thoughts. Even after the writing process, I can still review the “deleted” texts and see how my thoughts evolved over time. And I realized that it is not new to me, as a CS stendent, I have been using version control systems like Git for a long time, which also allows me to see the history of changes and the “deleted” code.</p>
+<h1 id="Open-Questions"><a href="#Open-Questions" class="headerlink" title="Open Questions"></a>Open Questions</h1><ul>
+<li>How important are these “deleted” texts to the writing process? Do they help writers to think better or just create noise?<ul>
+<li>What about in different writing contexts? Coding, creative writing, academic writing, personal reflection, draft, etc.?</li>
+</ul>
+</li>
+<li>Does breaking the “prefect” of a clean and tidy writing space this way reduce anxiety or increase it?</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="col-lg-3 hidden-md hidden-xs hidden-sm post-sidebar">
+                <aside>
+                    <div class="sidebar-heading">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc" aria-expanded="false" aria-controls="article-toc">
+                            <span class="fa fa-bars"></span>
+                                Table of Contents
+                        </button>
+                    </div>
+                    <nav class="post-toc collapse in" id="article-toc">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Demo"><span class="toc-number">2.</span> <span class="toc-text">Demo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Implementation"><span class="toc-number">3.</span> <span class="toc-text">Implementation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Observation"><span class="toc-number">4.</span> <span class="toc-text">Observation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Open-Questions"><span class="toc-number">5.</span> <span class="toc-text">Open Questions</span></a></li></ol>
+                    </nav>
+                </aside>
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/PaulDuanGitHub/blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2026 Paul Duan<br></p>
+                <p class="copyright text-muted">Theme Modified Based on <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">Clean Blog Hexo</a> by Jonathan Klughertz.</p>
+                <p class="copyright text-muted">Modification Inspired by <a href="https://huangxuan.me/" target="_blank">Hux Blog</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+<script src="/blog/js/archives-filter.js"></script>
+<script src="/blog/js/toc.js"></script>
+
+
+</html>

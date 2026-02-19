@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Deletion - Paul's Sketches</title>
+</head>
+<style>
+    #editor {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 16px;
+        display: block;
+    }
+
+    #viewer {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 16px;
+        display: block;
+    }
+
+    #editor:focus {
+        outline: none;
+    }
+</style>
+<body>
+    <div style="display: flex;">
+        <div style="margin-right: 20px;">
+            Editor:
+            <textarea id="editor" spellcheck="false"></textarea>
+        </div>
+        <div>
+            Viewer (Read-only):
+            <textarea id="viewer" disabled spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const viewer = document.getElementById('viewer');
+        const deletedCharPos = new Set();
+
+        editor.addEventListener('keydown', function(e) {
+            // prevent deletion keys
+            if (e.key === 'Backspace' || e.key === 'Delete') {
+                e.preventDefault();
+
+                // record the position of the deleted character
+                const selectionStart = editor.selectionStart;
+                const selectionEnd = editor.selectionEnd;
+
+                if (selectionStart === selectionEnd && selectionStart > 0) {
+                    const pos = selectionStart - 1;
+
+                    if(deletedCharPos.has(pos)) {
+                        for (let i = pos - 1; i >= 0; i--) {
+                            if (!deletedCharPos.has(i)) {
+                                deletedCharPos.add(i);
+                                console.log(deletedCharPos)
+                                break;
+                            }
+                        }
+                    } else {
+                        deletedCharPos.add(pos);
+                        console.log(deletedCharPos)
+                    }
+                } else {
+                    for (let i = selectionStart; i < selectionEnd; i++) {
+                        deletedCharPos.add(i);
+                    }
+                }
+
+                rerenderContent();
+            }
+        });
+
+        editor.addEventListener('input', function(e) {
+            rerenderContent();
+        });
+
+        const rerenderContent = () => {
+            let content = editor.value;
+            let newContent = '';
+            for (let i = 0; i < content.length; i++) {
+                if (deletedCharPos.has(i)) {
+                    newContent += `\u0336${content[i]}`;
+                } else {
+                    newContent += content[i];
+                }
+            }
+            viewer.value = newContent;
+        };
+
+    </script>
+</body>
+</html>
