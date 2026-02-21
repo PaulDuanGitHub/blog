@@ -44,45 +44,94 @@
         const editor = document.getElementById('editor');
         const viewer = document.getElementById('viewer');
         const deletedCharPos = new Set();
+        
+    
+        let previousValue = editor.value;
+    
 
+        function computeDiff(oldStr, newStr) {
+            let start = 0;
+ 
+            while (start < oldStr.length && start < newStr.length && oldStr[start] === newStr[start]) {
+                start++;
+            }
+            
+            let oldEnd = oldStr.length - 1;
+            let newEnd = newStr.length - 1;
+
+            while (oldEnd >= start && newEnd >= start && oldStr[oldEnd] === newStr[newEnd]) {
+                oldEnd--;
+                newEnd--;
+            }
+            
+            return {
+                start: start, 
+                oldLength: oldEnd - start + 1,
+                newLength: newEnd - start + 1
+            };
+        }
+    
         editor.addEventListener('keydown', function(e) {
             // prevent deletion keys
             if (e.key === 'Backspace' || e.key === 'Delete') {
                 e.preventDefault();
-
+    
                 // record the position of the deleted character
                 const selectionStart = editor.selectionStart;
                 const selectionEnd = editor.selectionEnd;
-
+    
                 if (selectionStart === selectionEnd && selectionStart > 0) {
                     const pos = selectionStart - 1;
-
+    
                     if(deletedCharPos.has(pos)) {
                         for (let i = pos - 1; i >= 0; i--) {
                             if (!deletedCharPos.has(i)) {
                                 deletedCharPos.add(i);
-                                console.log(deletedCharPos)
                                 break;
                             }
                         }
                     } else {
                         deletedCharPos.add(pos);
-                        console.log(deletedCharPos)
                     }
                 } else {
                     for (let i = selectionStart; i < selectionEnd; i++) {
                         deletedCharPos.add(i);
                     }
                 }
-
+    
                 rerenderContent();
             }
         });
-
+    
         editor.addEventListener('input', function(e) {
+
+            const newValue = editor.value;
+            const diff = computeDiff(previousValue, newValue);
+            
+            const newPositions = new Set();
+            
+            deletedCharPos.forEach(pos => {
+                if (pos < diff.start) {
+
+                    newPositions.add(pos);
+                } else if (pos >= diff.start && pos < diff.start + diff.oldLength) {
+    
+                } else {
+
+                    newPositions.add(pos + diff.newLength - diff.oldLength);
+                }
+            });
+            
+
+            deletedCharPos.clear();
+            newPositions.forEach(p => deletedCharPos.add(p));
+            
+
+            previousValue = newValue;
+            
             rerenderContent();
         });
-
+    
         const rerenderContent = () => {
             let content = editor.value;
             let newContent = '';
@@ -95,7 +144,6 @@
             }
             viewer.value = newContent;
         };
-
     </script>
 </body>
 </html>

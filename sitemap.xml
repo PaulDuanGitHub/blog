@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://paulduangithub.github.io/blog/2026/02/19/No-Deletion/</loc>
+    <loc>https://paulduangithub.github.io/blog/2026/02/21/No-Deletion/</loc>
     
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,99 +40,113 @@
 
   <url>
     <loc>https://paulduangithub.github.io/blog</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://paulduangithub.github.io/blog/tags/Interation/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/Input/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/English/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://paulduangithub.github.io/blog/tags/test/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/markdown/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/latex/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/hexo/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/IDN-Interactive-Digital-Narrative/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/IF-Interactive-Fiction/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://paulduangithub.github.io/blog/tags/HF-Hypertext-Fiction/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/%E4%BA%92%E5%8A%A8%E5%8F%99%E4%BA%8B/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/tags/Chinese/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/IDN-Interactive-Digital-Narrative/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/IF-Interactive-Fiction/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/HF-Hypertext-Fiction/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/Writing/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/Interaction/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/Materiality/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/HCI/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/tags/English/</loc>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -140,22 +154,22 @@
 
   
   <url>
-    <loc>https://paulduangithub.github.io/blog/categories/Sketches/</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://paulduangithub.github.io/blog/categories/Build-Logs/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://paulduangithub.github.io/blog/categories/Notes/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://paulduangithub.github.io/blog/categories/Sketches/</loc>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
