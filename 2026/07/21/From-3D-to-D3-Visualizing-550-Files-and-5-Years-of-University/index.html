@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="EpilogueThe idea for this project took shape as my undergraduate journey was drawing to a close. With a break approaching, I wanted to build something"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Paul Duan"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="From 3D to D3: Visualizing 550 Files and 5 Years of University"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="EpilogueThe idea for this project took shape as my undergraduate journey was drawing to a close. With a break approaching, I wanted to build something"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Paul&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://paulduangithub.github.io/blogimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://paulduangithub.github.io/blogimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>From 3D to D3: Visualizing 550 Files and 5 Years of University - Paul&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+    <!-- Google tag (gtag.js) -->
+    <script>
+        if (location.hostname === "paulduangithub.github.io") {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-KNPEXFEH64";
+          document.head.appendChild(s);
+      
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KNPEXFEH64');
+        }
+    </script>
+
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="/blog/img/favicon.ico"/>
+    
+
+<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top is-post">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/blog/">Paul Duan's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/blog/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://xianzhaoduan.com">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <div>
+        
+            <hr/>
+        
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<header class="intro-header is-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    
+                        <div class="post-categories">
+                            
+                                
+    <a
+        class="category-link category-active category-build-logs"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('category', 'Build Logs')"
+        data-category="Build Logs">
+        Build Logs
+    </a>
+
+                            
+                        </div>
+                    
+                    <h1>From 3D to D3: Visualizing 550 Files and 5 Years of University</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Paul Duan on
+                        
+                        
+                            Jul 21st, 2026
+                        
+                    </span>
+                    
+                        <div class="post-tags">
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'D3')"
+        data-tag="D3">
+        #D3
+    </a>
+
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'Data Visualization')"
+        data-tag="Data Visualization">
+        #Data Visualization
+    </a>
+
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'R3F')"
+        data-tag="R3F">
+        #R3F
+    </a>
+
+                            
+                                
+    <a
+        class="tag-pill tag-active"
+        href="javascript:void(0)"
+        onclick="jumpToArchives('tag', 'Three.js')"
+        data-tag="Three.js">
+        #Three.js
+    </a>
+
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<hr class="section-divider">
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Gallery -->
+            
+
+            <!-- MD TOC -->
+            <div class="visible-xs visible-sm visible-md col-md-10 col-md-offset-1">
+                <div class="sidebar-heading mobile">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc-mobile" aria-expanded="false" aria-controls="article-toc-mobile">
+                        <span class="fa fa-bars"></span>
+                            Table of Contents
+                    </button>
+                </div>
+                <nav class="post-toc mobile collapse" id="article-toc-mobile">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Epilogue"><span class="toc-number">1.</span> <span class="toc-text">Epilogue</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Design-Implementation"><span class="toc-number">1.1.</span> <span class="toc-text">Design &amp; Implementation</span></a></li></ol></li></ol>
+                </nav>
+            </div>
+
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <h1 id="Epilogue"><a href="#Epilogue" class="headerlink" title="Epilogue"></a>Epilogue</h1><p>The idea for this project took shape as my undergraduate journey was drawing to a close. With a break approaching, I wanted to build something—ideally a data visualization project, woven with a few timely threads of reflection and nostalgia. That formed the early blueprint: a visualization of my undergraduate studies.</p>
+<p>The data collection phase, however, wasn’t entirely smooth. Initially, I planned to track conventional metrics: assignments, deadlines, grades, and GPA. But as I started gathering information, I realized that some course platforms were no longer accessible, and my local hard drive lacked a complete archive. Then came the breakthrough: I discovered that OneDrive preserves the version history of every file, and luckily, the vast majority of my coursework lived there. With that, I pivoted and began building the project around this dataset.</p>
+<h2 id="Design-Implementation"><a href="#Design-Implementation" class="headerlink" title="Design &amp; Implementation"></a>Design &amp; Implementation</h2><h3 id="The-Landing"><a href="#The-Landing" class="headerlink" title="The Landing"></a>The Landing</h3><p>Since this was my first time creating a scrollytelling piece, I leaned heavily on AI for guidance in the early stages. The overarching structure of “Landing + Detail” was finalized based on its suggestions. From there, I began conceptualizing and designing the Landing page.</p>
+<p>Integrating 3D interactions into web experiences has always been an obsession of mine, so it felt only natural to bring in Three.js and React Three Fiber (R3F). The ideation process, however, wasn’t always enjoyable. For me, it involved staring at a blank notepad, racking my brain, and walking in circles through cycles of self-doubt and affirmation. Ideas that seemed brilliant one day would be completely scrapped by the next. Yet, I eventually arrived at a few concepts that I still find compelling today—the current Landing page being one of them. It was inspired by <strong><a target="_blank" rel="noopener" href="https://henryheffernan.com/">Henry Heffernan’s portfolio</a></strong>; the desk scene, the report resting on it, the graduation cap, and the mug all work together to establish the tone and atmosphere of the entire site.</p>
+<p>I had dabbled in Three.js before, barely scratching the surface through online tutorials. But back then, learning a new tool wasn’t nearly as accessible as it is today. The first major hurdle I had to tackle was rendering. In Blender, my scene looked incredibly realistic and detailed under the Cycles ray-tracing engine. However, loading the exact same models and lighting environment into Three.js resulted in a flat and cheap appearance. To ensure users saw the same visual fidelity that I did, I had to bake the textures onto the models—applying them as a pre-rendered “skin” rather than relying on real-time lighting calculations.</p>
+<p>Because I was also learning Blender on the fly, the entire baking process was far from easy, even with AI assistance. Unwrapped UV maps, misaligned coordinates, overlapping textures—issues cropped up one after another. The most agonizing part was the time it took. Using the integrated graphics on my laptop to bake ray-traced textures was excruciatingly slow, forcing me to eventually rent a high-performance cloud server. It was during this painstaking process that I started thinking about the transition between the Landing page and the subsequent narrative sections.</p>
+<p>My initial thought was: “Since we have a report sitting on the desk, why not just move the camera closer to the paper to transition?” But that idea evolved into what you see now. Rather than simply moving the camera, I thought it would be far more visually engaging to have a gust of wind blow the paper up to cover the lens. Fortunately, Blender’s turbulence and cloth simulations provided the perfect physics to make it happen.</p>
+<h3 id="The-Detail"><a href="#The-Detail" class="headerlink" title="The Detail"></a>The Detail</h3><p>Dividing the narrative into “Acts” was an AI suggestion, and it provided the framework for my conceptualization. For me, this was the most challenging part of the project, and perhaps the one I’m least satisfied with.</p>
+<p>What I needed was to construct an effective and engaging narrative within these three or four Acts. I wanted visitors to find it interesting while simultaneously gaining a unified, structural understanding of my university experience—which was the reflective outcome I originally aimed for. The contradiction lay in the data itself: I only had file version histories. That represents just one facet of a university journey, failing to achieve structural completeness and leaving other aspects of learning impossible to narrate.</p>
+<p>So, I compromised. I shifted my focus entirely to making it interesting. The emphasis became making the interactions with the charts engaging, the transitions between them seamless, and the narrative points themselves entertaining.</p>
+<p><strong>I hope you find it interesting, too.</strong></p>
+
+
+                
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="col-lg-3 hidden-md hidden-xs hidden-sm post-sidebar">
+                <aside>
+                    <div class="sidebar-heading">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#article-toc" aria-expanded="false" aria-controls="article-toc">
+                            <span class="fa fa-bars"></span>
+                                Table of Contents
+                        </button>
+                    </div>
+                    <nav class="post-toc collapse in" id="article-toc">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Epilogue"><span class="toc-number">1.</span> <span class="toc-text">Epilogue</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Design-Implementation"><span class="toc-number">1.1.</span> <span class="toc-text">Design &amp; Implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Landing"><span class="toc-number">1.1.1.</span> <span class="toc-text">The Landing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Detail"><span class="toc-number">1.1.2.</span> <span class="toc-text">The Detail</span></a></li></ol></li></ol></li></ol>
+                    </nav>
+                </aside>
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/PaulDuanGitHub/blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2026 Paul Duan<br></p>
+                <p class="copyright text-muted">Theme Modified Based on <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">Clean Blog Hexo</a> by Jonathan Klughertz.</p>
+                <p class="copyright text-muted">Modification Inspired by <a href="https://huangxuan.me/" target="_blank">Hux Blog</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+<script src="/blog/js/archives-filter.js"></script>
+<script src="/blog/js/toc.js"></script>
+
+
+</html>
