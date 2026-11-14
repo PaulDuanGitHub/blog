@@ -63,7 +63,7 @@
         }
     %>
     <% if (image) { %>
-        <meta property="og:image" content="<%= config.url %><%= image %>"/>
+        <meta property="og:image" content="<%= full_url_for(image) %>"/>
     <% } %>
 
         <meta name="twitter:card" content="summary_large_image"/>
@@ -73,7 +73,7 @@
     <% } %>
 
     <% if(image) { %>
-        <meta name="twitter:image" content="<%= config.url %><%= image %>"/>
+        <meta name="twitter:image" content="<%= full_url_for(image) %>"/>
     <% } %>
 
     <!-- Title -->
@@ -90,6 +90,10 @@
     title.push(config.title);
     %>
     <title><%= title.join(' - ') %></title>
+    <%
+    var canonicalPath = (page.path || '').replace(/index\.html$/, '');
+    %>
+    <link rel="canonical" href="<%= full_url_for(canonicalPath || '/') %>">
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
